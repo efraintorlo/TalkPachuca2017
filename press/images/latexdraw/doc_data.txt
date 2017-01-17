@@ -1,0 +1,38 @@
+InfoBegin
+InfoKey: ModDate
+InfoValue: D:20160421032322-05'00'
+InfoBegin
+InfoKey: PTEX.Fullbanner
+InfoValue: This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) kpathsea version 6.2.1dev
+InfoBegin
+InfoKey: CreationDate
+InfoValue: D:20160421032322-05'00'
+InfoBegin
+InfoKey: Creator
+InfoValue: TeX
+InfoBegin
+InfoKey: Producer
+InfoValue: pdfTeX-1.40.15
+PdfID0: d0ebf5cc3c0a83acfb83786f73eaf74d
+PdfID1: d0ebf5cc3c0a83acfb83786f73eaf74d
+NumberOfPages: 4
+PageMediaBegin
+PageMediaNumber: 1
+PageMediaRotation: 0
+PageMediaRect: 0 0 526 295
+PageMediaDimensions: 526 295
+PageMediaBegin
+PageMediaNumber: 2
+PageMediaRotation: 0
+PageMediaRect: 0 0 513 339
+PageMediaDimensions: 513 339
+PageMediaBegin
+PageMediaNumber: 3
+PageMediaRotation: 0
+PageMediaRect: 0 0 430 358
+PageMediaDimensions: 430 358
+PageMediaBegin
+PageMediaNumber: 4
+PageMediaRotation: 0
+PageMediaRect: 0 0 312 236
+PageMediaDimensions: 312 236
