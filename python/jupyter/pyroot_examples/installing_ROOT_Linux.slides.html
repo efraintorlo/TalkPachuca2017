@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>cosmo@Pachuca17 slides</title>
+<title>installing_ROOT_Linux slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -11830,21 +11830,9 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div style='color:#F6CC04 !important; background-color: #1C2227; padding:20px; border-radius: 25px; text-align:center;'>
-<h1 style='color:#F6CC04 !important;'> 
- Programming Skills for Cosmology
-</h1>
+<div style='color:#1C2227; background-color: #3c5097; padding:50px; border-radius: 55px; text-align:center;'>
 
-<h1 style='color:#F6CC04 !important;'> 
-  How important are programming skills in Cosmology and Particle Physics (and life)
-</h1>
-<h2 style='color: #e64a4a'> Pachuca 2017 </h2>
-</div><hr>
-<div style='color:#1C2227; background-color: #e64a4a; padding:20px;  padding:20px; border-radius: 25px; text-align:center;'>
-
-<!--- <img style="float: right;" src="../../doc/img/test_seaborn.png" width="200px"> -->
-
-<h2 style='color:#1C2227;'>   How important are programming skills in Cosmology and Particle Physics (and life) </h2>
+<h1 style='color:#FCFFFC;'>Installing `ROOT` and `PyROOT`</h1>
 
 </div><p><strong>Author:</strong> Efrain Torres-Lomas</p>
 <p><strong>Email:</strong>  efrain@fisica.ugto.mx</p>
@@ -11858,24 +11846,130 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div style='color:#1C2227; background-color: #e64a4a; padding:20px;  padding:20px; border-radius: 25px; text-align:center;'>
-
-<h2 style='color:#1C2227;'>   How important are programming skills in Cosmology and Particle Physics (and life) </h2>
+<h2 id="The-simplest-way-to-install-an-actualized-ROOT-is-by-cloning-a-GitHub-repository-forked-from-the-official-ROOT-repo.">The simplest way to install an actualized ROOT is by cloning a GitHub repository forked from the official ROOT repo.<a class="anchor-link" href="#The-simplest-way-to-install-an-actualized-ROOT-is-by-cloning-a-GitHub-repository-forked-from-the-official-ROOT-repo.">&#182;</a></h2><p>The official repository is hosted at:</p>
+<p><a href="https://github.com/root-mirror/root">https://github.com/root-mirror/root</a></p>
+<p>My Fork can be found at:</p>
+<p><a href="https://github.com/elchinot7/root">https://github.com/elchinot7/root</a></p>
 
 </div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Method-1:-(Make)-DO-NOT-USE-THIS-METHOD!">Method 1: (Make) DO NOT USE THIS METHOD!<a class="anchor-link" href="#Method-1:-(Make)-DO-NOT-USE-THIS-METHOD!">&#182;</a></h1><p><img src="../../../img/confounded_face.png" alt="Image Test" style="width:70px"></p>
+
+<pre><code>cd ~/GitHub
+git clone https://github.com/elchinot7/root
+cd root
+./configure linuxx8664gcc --enable-python --with-python-incdir=/usr/include/python2.7   --with-python-libdir=/usr/lib/x86_64-linux-gnu/
+
+</code></pre>
+<p>This method failed with error : <code>RConversionRuleparser error</code></p>
+
 </div>
 </div>
 </div></section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Method-2:-(CMake)">Method 2: (CMake)<a class="anchor-link" href="#Method-2:-(CMake)">&#182;</a></h1><p><img src="../../../img/sunglasses_emoji.png" alt="Image Test" style="width:70px"></p>
+
+<pre><code>cd ~/GitHub
+git clone https://github.com/elchinot7/root
+mkdir ~/Programs/myroot
+cd  ~/Programs/myroot
+cmake ~/GitHub/root
+cmake --build .
+
+</code></pre>
+<p>Note the dot after --build.</p>
+<p>Note that the the directory where the built <code>ROOT</code> is installed (in this case <code>~/Programs/myroot</code> ) is different from the directory where the forked ROOT was cloned (in this case <code>~/Github/root</code> ).</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style='color:#1C2227; background-color: #3c5097; padding:10px; border-radius: 25px; text-align:center;'>
+
+<h1 style='color:#FCFFFC;'>`ROOT` Requirements at `Linux`.</h1>
+
+</div><p>At my <code>Dell LATITUDE Machine</code> with <code>Jessie Debian</code>.</p>
+
+<pre><code>g++ (Debian 4.9.2-10) 4.9.2
+Python 2.7.9
+cmake version 3.7.2
+
+</code></pre>
+<div style='color:#1C2227; background-color: #3c5097; padding:10px; border-radius: 25px; text-align:center;'>
+
+<h1 style='color:#FCFFFC;'>`Python` Requirements</h1>
+
+</div>
+<pre><code>ipython
+jupyter
+notebook
+metakernel
+zmq    </code></pre>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style='color:#1C2227; background-color: #3c5097; padding:10px; border-radius: 25px; text-align:center;'>
+
+<h1 style='color:#FCFFFC;'>Start using `ROOT` and `ROOTbooks`</h1>
+
+</div><h3 id="In-~/.bashrc,-~/.zshrc-or-in-my-case-~/.paths.local-add-the-lines:">In <code>~/.bashrc</code>, <code>~/.zshrc</code> or in my case <code>~/.paths.local</code> add the lines:<a class="anchor-link" href="#In-~/.bashrc,-~/.zshrc-or-in-my-case-~/.paths.local-add-the-lines:">&#182;</a></h3>
+<pre><code>export ROOTSYS=~/Programs/myroot
+cd ${ROOTSYS} &amp;&amp; source bin/thisroot.sh
+export PYTHONPATH=$PYTHONPATH:$ROOTSYS/lib
+
+</code></pre>
+<p>and type in your shell:</p>
+
+<pre><code>root --notebook
+</code></pre>
+<p>This will start a ROOT-flavoured notebook server in your computer.</p>
+<p>Alternatively, if you would like to use the Jupyter command directly, you can do on Linux:</p>
+
+<pre><code>cp -r $ROOTSYS/etc/notebook/kernels/root ~/.local/share/jupyter/kernels
+jupyter-notebook</code></pre>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div style='color:#1C2227; background-color: #3c5097; padding:10px; border-radius: 25px; text-align:center;'>
+
+<h1 style='color:#FCFFFC;'>If all went well now we can use ROOT as Python</h1>
+
+</div>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="o">&lt;</span><span class="n">div</span> <span class="n">style</span><span class="o">=</span><span class="s1">&#39;color:#1C2227; background-color: #e64a4a; padding:20px;  padding:20px; border-radius: 25px; text-align:center;&#39;</span><span class="o">&gt;</span>
-
-<span class="o">&lt;</span><span class="n">h2</span> <span class="n">style</span><span class="o">=</span><span class="s1">&#39;color:#1C2227;&#39;</span><span class="o">&gt;</span>   <span class="n">How</span> <span class="n">important</span> <span class="n">are</span> <span class="n">programming</span> <span class="n">skills</span> <span class="ow">in</span> <span class="n">Cosmology</span> <span class="ow">and</span> <span class="n">Particle</span> <span class="n">Physics</span> <span class="p">(</span><span class="ow">and</span> <span class="n">life</span><span class="p">)</span> <span class="o">&lt;/</span><span class="n">h2</span><span class="o">&gt;</span>
-
-<span class="o">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">ROOT</span>
 </pre></div>
 
 </div>
@@ -11887,12 +11981,29 @@ a.anchor-link {
 
 
 <div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-1-bfa940e789ac&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">1</span>
-<span class="ansi-red-fg">    &lt;div style=&#39;color:#1C2227; background-color: #e64a4a; padding:20px;  padding:20px; border-radius: 25px; text-align:center;&#39;&gt;</span>
-    ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
+
+
+
+<div id="8b053642-3bc2-4e8b-abf8-19b496c7436e"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#8b053642-3bc2-4e8b-abf8-19b496c7436e');
+
+require(['notebook'],
+  function() {
+    IPython.CodeCell.config_defaults.highlight_modes['magic_text/x-c++src'] = {'reg':[/^%%cpp/]};
+    console.log("JupyROOT - %%cpp magic configured");
+  }
+);
+
+</script>
+</div>
+
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Welcome to JupyROOT 6.09/01
 </pre>
 </div>
 </div>
@@ -11900,15 +12011,48 @@ a.anchor-link {
 </div>
 </div>
 
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="$\oint$">$\oint$<a class="anchor-link" href="#$\oint$">&#182;</a></h1>
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">ROOT</span><span class="o">.</span><span class="n">__file__</span>
+</pre></div>
+
 </div>
 </div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[7]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;/home/chinot7/Programs/myroot/lib/ROOT.pyc&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div></section></section>
 </div>
 </div>

@@ -4,12 +4,12 @@ title: Dyn Sys @ Cosmo 16
 ---
 = data-x="0"
 
-DynSys@Inflation
-==================
+Numeric Skills at Physics
+===========================
 
 </br>
 
-I Workshop on Dynamical System in Cosmology
+Two examples: Cosmology and Particle Physics
 ----------------------------------------------
 
 </br>
@@ -22,9 +22,9 @@ I Workshop on Dynamical System in Cosmology
 
 # Resumen
 
-1. Inflation
-2. Dynamical Systems & Inflation
-3. Pyncare
+1. Numeric life at Science
+2. Cosmology: Supernavae `Python`
+3. Particle Phyisics: `Python and C++`
 
 ---
 = data-x='000', data-y='0', data-z='-100'
