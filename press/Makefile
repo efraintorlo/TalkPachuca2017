@@ -6,8 +6,22 @@ SHELL := /bin/bash
 # ( without ".md") to be
 # processed by mdpress
 #-----------------------------
-MDFILE = numericSkills@Cosmo
+MDFILE ?= numericSkills@Cosmo
+#MDFILE ?= InflationExample
+#MDFILE = SupernovaeExample
 #-----------------------------
+
+ifeq ($(MDFILE),numericSkills@Cosmo)
+	IMAGES_DIR = img
+endif
+
+ifeq ($(MDFILE),InflationExample)
+	IMAGES_DIR = img_inflation
+endif
+
+ifeq ($(MDFILE),SupernovaeExample)
+	IMAGES_DIR = img_super
+endif
 
 #-----------------------------
 # Stylesheets defined
@@ -17,7 +31,8 @@ MDFILE = numericSkills@Cosmo
 #STYLESHEET = impress
 #STYLESHEET = obtvse
 #STYLESHEET = mytheme
-STYLESHEET = dynsys
+#STYLESHEET = dynsys
+STYLESHEET = pachuca
 #-----------------------------
 
 #-----------------------------
@@ -28,7 +43,7 @@ STYLESHEET = dynsys
 #PRETTYSTYLE = solarized_dark.css
 #PRETTYSTYLE = solarized_light.css
 #PRETTYSTYLE = dark.css
-#PRETTYSTYLE = monokai.css
+PRETTYSTYLE = monokai.css
 #PRETTYSTYLE = vs.css
 #PRETTYSTYLE = railscasts.css
 #PRETTYSTYLE = rainbow.css
@@ -38,7 +53,10 @@ STYLESHEET = dynsys
 #PRETTYSTYLE = tomorrow-eighties.css
 #PRETTYSTYLE = pojoaque.css
 #PRETTYSTYLE = school_book.css
-PRETTYSTYLE = github.css
+#PRETTYSTYLE = github.css
+#PRETTYSTYLE = obsidian.css
+#PRETTYSTYLE = hopscotch.css
+#PRETTYSTYLE = hopscotch_new.css
 #-----------------------------
 #  Apps needed are different
 #  for Linux/Mac
@@ -66,7 +84,8 @@ endif
 #  -v, --verbose           Be verbose.
 #  -i, --images=<s>        Directory of images for the presentation
 #  -h, --help              Show this message
-MDFLAGS = -v --images=images --latex --stylesheet=$(STYLESHEET)
+#MDFLAGS = -v --images=images --latex --stylesheet=$(STYLESHEET)
+MDFLAGS = -v --images=$(IMAGES_DIR) --latex --stylesheet=$(STYLESHEET)
 #MDFLAGS += -a
 
 #default: begin compile fix_prettify bootstrap_patch show
@@ -118,6 +137,7 @@ fix_prettify:
 	@echo -e "\033[31m              Changing the prettify style ...\033[0m"
 	@echo "==================================================="
 	@cd $(MDFILE)/ && $(SED) -i 's#css/highlight.css#css/highlight_styles/$(PRETTYSTYLE)#g' index.html
+	@if [ -a assets/css/highlight_styles/$(PRETTYSTYLE) ] ; then cp assets/css/highlight_styles/$(PRETTYSTYLE) $(MDFILE)/css/highlight_styles/$(PRETTYSTYLE) ;  fi;
 
 show_local:
 	@echo
