@@ -42,11 +42,27 @@ credentials = {
 <div class="row">
 
     <div class='col-md-10 col-md-offset-0'>
-<img src="./img/img/figures/code_quality/code_quality.png" alt="Image1" style="width:1000px;height:400px;">
+<img src="./img/img/figures/code_quality/code_quality.png" alt="Image1" style="width:1000px;height:300px;">
     </div>
 
 </div>
 
+
+---
+= data-x='000', data-y='000', data-z='000'
+
+## Are we trained?
+
+<img src="./img/img/figures/are_we_trained4/are_we_trained.png" alt="HTML5-IMAGE" style="width:1200px;height:270px;">
+<img src="./img/img/figures/training_by_country2/training_by_country.png" alt="HTML5-IMAGE" style="width:1000px;height:480px;">
+
+
+---
+= data-x='000', data-y='000', data-z='000'
+
+## Tools
+
+<img src="./img/img/figures/tools_by_career1/tools_by_career.png" alt="HTML5-IMAGE" style="width:1200px;height:600px;">
 
 ---
 = data-x='000', data-y='000', data-z='000'
@@ -72,7 +88,7 @@ systematics-limited results, incorrect results, denial of tenure.
 
 <div class="row">
 
-<div class='col-md-5 col-md-offset-0'>
+<div class='col-md-4 col-md-offset-0'>
 <h2> Programming Languages</h2>
 <pre><code class='prettyprint Bash '>Languages/
 │ 
@@ -99,7 +115,7 @@ systematics-limited results, incorrect results, denial of tenure.
 </code></pre>
 </div>
 
- <div class='col-md-5 col-md-offset-1'>
+ <div class='col-md-4 col-md-offset-1'>
  <h2> In Physics...</h2>
 <pre><code class='prettyprint Bash '>Codes/
 │ 
@@ -296,6 +312,8 @@ int main()
 = data-x '000', data-y='0', data-z='-100'
 
 # Jobs
+
+<img src="./img/img/glassdoor_data_scientist_job.png" alt="HTML5-IMAGE" style="width:1200px;height:600px;">
 
 
 - [https://www.linkedin.com/jobs/view/122233571](https://www.linkedin.com/jobs/view/122233571)
