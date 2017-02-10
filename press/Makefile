@@ -9,9 +9,14 @@ SHELL := /bin/bash
 MDFILE ?= numericSkills@Cosmo
 #MDFILE ?= InflationExample
 #MDFILE = SupernovaeExample
+#MDFILE ?= batallas@pachuca
 #-----------------------------
 
 ifeq ($(MDFILE),numericSkills@Cosmo)
+	IMAGES_DIR = img
+endif
+
+ifeq ($(MDFILE),batallas@pachuca)
 	IMAGES_DIR = img
 endif
 

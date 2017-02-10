@@ -23,7 +23,7 @@ DynSys@Inflation
 3. Pyncare
 
 ---
-= data-x='000', data-y='0', data-z='-100'
+= data-x='2000', data-y='0', data-z='00'
 
 # HBB es un modelo razonable
 
@@ -42,7 +42,7 @@ durante:
 
 
 ---
-= data-x='000', data-y='0', data-z='-100'
+= data-x='3000', data-y='0', data-z='00'
 
 
 
@@ -98,7 +98,7 @@ $ \boxed{\frac{V_i}{V_c} \sim \left(\frac{l_i}{l_c}\right)^3 \sim \left(
 
 
 ---
-= data-x='000', data-y='0', data-z='-200'
+= data-x='4000', data-y='0', data-z='00'
 
 #  El problema del horizonte
 
@@ -113,7 +113,7 @@ $ \boxed{\frac{V_i}{V_c} \sim \left(\frac{l_i}{l_c}\right)^3 \sim \left(
 
 
 ---
-= data-x='000', data-y='0', data-z='-100'
+= data-x='5000', data-y='0', data-z='-100'
 
 
 </br>
@@ -132,7 +132,7 @@ $ \boxed{\frac{V_i}{V_c} \sim \left(\frac{l_i}{l_c}\right)^3 \sim \left(
 
 
 ---
-= data-x='000', data-y='0', data-z='-100'
+= data-x='6000', data-y='0', data-z='-100'
 
 
 </br>
@@ -151,7 +151,7 @@ alt="HTML5-IMAGE" style="width:700px;height:500px;">
 
 
 ---
-= data-x='000', data-y='0', data-z='-100'
+= data-x='7000', data-y='0', data-z='00'
 
 # El inflatón 
 
@@ -169,7 +169,7 @@ V=\frac{1}{2}m^2 \phi^2
  \end{equation}
 
 ---
-= data-x='000', data-y='0', data-z='-100'
+= data-x='8000', data-y='0', data-z='00'
 
 ## Modelo más simple
 
@@ -186,7 +186,7 @@ V=\frac{1}{2}m^2 \phi^2
 
 
 ---
-= data-x='000', data-y='0', data-z='-100'
+= data-x='9000', data-y='0', data-z='00'
 
 ## Inflación como un sistema dinámico
 
@@ -229,7 +229,7 @@ where $s \equiv \sqrt{\frac{2}{3}} M_{pl} m$ and the time variable is $\eta=mt$
 
 
 ---
-= data-x='000', data-y='0', data-z='-100'
+= data-x='10000', data-y='0', data-z='00'
 
 ## Stiff Fluid
 
@@ -257,6 +257,7 @@ we obtain
 </p>
 
 ---
+= data-x='12000', data-y='0', data-z='00'
 
 ## Inflation 
 <p>
@@ -293,7 +294,7 @@ This is an indication that this attractor is related with an inflationary phase.
 </p>
 
 ---
-= data-x='000', data-y='0', data-z='-200'
+= data-x='14000', data-y='0', data-z='00'
 
 <p>
 Now we can obtain the slow roll parameters for the $V\sim m^2\phi^2$
@@ -322,7 +323,7 @@ where ''+" and ''-'' signs applies for IV and II attractors, respectively.
 </p>
 
 ---
-= data-x='000', data-y='0', data-z='-100'
+= data-x='14000', data-y='0', data-z='00'
 
 
 </br>
@@ -340,16 +341,12 @@ where ''+" and ''-'' signs applies for IV and II attractors, respectively.
 
 
 ---
-= data-x='000', data-y='0', data-z='-200'
+= data-x='15000', data-y='0', data-z='00'
 
 # Compact Version
 
 [InflationDynSys](../../python/pyncare/phi2@poincare_press_COPY.slides.html#/step-2)
 
 
----
-= data-x='000', data-y='000', data-z='000'
-
-# ?
 
 

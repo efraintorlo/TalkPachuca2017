@@ -35,7 +35,7 @@ credentials = {
 ## 3. Particle Phyisics: `Python` and `C++`
 
 ---
-= data-x="1000"
+= data-x="2000"
 
 # Programming Skills in science
 
@@ -44,28 +44,29 @@ credentials = {
     <div class='col-md-10 col-md-offset-0'>
 <img src="./img/img/figures/code_quality/code_quality.png" alt="Image1" style="width:1000px;height:300px;">
     </div>
+ </br>
 
 </div>
-
+[https://arxiv.org/abs/1507.03989](https://arxiv.org/abs/1507.03989)
 
 ---
-= data-x='000', data-y='000', data-z='000'
+= data-x='3000', data-y='000', data-z='000'
 
 ## Are we trained?
 
-<img src="./img/img/figures/are_we_trained4/are_we_trained.png" alt="HTML5-IMAGE" style="width:1200px;height:270px;">
-<img src="./img/img/figures/training_by_country2/training_by_country.png" alt="HTML5-IMAGE" style="width:1000px;height:480px;">
+<img src="./img/img/figures/are_we_trained4/are_we_trained.png" alt="HTML5-IMAGE" style="width:1200px;height:240px;">
+<img src="./img/img/figures/training_by_country2/training_by_country.png" alt="HTML5-IMAGE" style="width:900px;height:450px;">
 
 
 ---
-= data-x='000', data-y='000', data-z='000'
+= data-x='4000', data-y='000', data-z='000'
 
 ## Tools
 
 <img src="./img/img/figures/tools_by_career1/tools_by_career.png" alt="HTML5-IMAGE" style="width:1200px;height:600px;">
 
 ---
-= data-x='000', data-y='000', data-z='000'
+= data-x='5000', data-y='000', data-z='000'
 
 # Numeric stuff is hard
 
@@ -83,14 +84,14 @@ systematics-limited results, incorrect results, denial of tenure.
 
 
 ---
-= data-x="1000"
+= data-x="6000"
 
 
 <div class="row">
 
 <div class='col-md-4 col-md-offset-0'>
 <h2> Programming Languages</h2>
-<pre><code class='prettyprint Bash '>Languages/
+<pre><code class='prettyprint Bash' style='line-height: 25px;'>Languages/
 │ 
 ├── Compiled
 │   ├── Java
@@ -115,9 +116,9 @@ systematics-limited results, incorrect results, denial of tenure.
 </code></pre>
 </div>
 
- <div class='col-md-4 col-md-offset-1'>
+ <div class='col-md-5 col-md-offset-1'>
  <h2> In Physics...</h2>
-<pre><code class='prettyprint Bash '>Codes/
+<pre><code class='prettyprint Bash' style='line-height: 25px;'>Codes/
 │ 
 ├── Cosmo
 │   ├── CosmoMC (Fortran 2008)
@@ -142,34 +143,19 @@ systematics-limited results, incorrect results, denial of tenure.
 </div>
 
 ---
-= data-x="1500"
-
-<div class="row">
-
-    <div class='col-md-5 col-md-offset-1'>
-        <pre><code class='prettyprint Python '> print("Hello World") </code></pre>
-
-    </div>
-
-    <div class='col-md-5 col-md-offset-1'>
-       <p>COLUMN2</p>
-    </div>
-
-</div>
-
----
-= data-x="1500"
+= data-x="7000"
 
 
 ## The advisors use to ask simple things as:
+</br>
 
 ### **Can you solve this set of equations for tomorrow?**
-
+</br>
 ### **Plot this solution and send me the figure.**
 
 
 ---
-= data-x='1000', data-y='0', data-z='-1000'
+= data-x='6000', data-y='0', data-z='1000'
 
 
 <div class="row">
@@ -181,7 +167,7 @@ systematics-limited results, incorrect results, denial of tenure.
 </div>
 
 ---
-= data-x='1000', data-y='0', data-z='-2000'
+= data-x='7000', data-y='0', data-z='0000'
 
 
 <div class="row">
@@ -194,7 +180,7 @@ systematics-limited results, incorrect results, denial of tenure.
 
 
 ---
-= data-x='2000', data-y='0', data-z='000'
+= data-x='8000', data-y='0', data-z='000'
 
 
 <div class="row">
@@ -206,7 +192,7 @@ systematics-limited results, incorrect results, denial of tenure.
 </div>
 
 ---
-= data-x='3000', data-y='0', data-z='00'
+= data-x='9000', data-y='0', data-z='00'
 
 <div class="row">
 
@@ -223,7 +209,7 @@ systematics-limited results, incorrect results, denial of tenure.
 
 
 ---
-= data-x='000', data-y='0', data-z='-100'
+= data-x='10000', data-y='0', data-z='00'
 
 # ` C++` vs ` Python`
 
@@ -246,7 +232,7 @@ print("Hello World")
 ```
 
 ---
-= data-x='000', data-y='000', data-z='000'
+= data-x='11000', data-y='000', data-z='000'
 
 ## Cuda
 
@@ -289,7 +275,7 @@ int main()
 
 
 ---
-= data-x='000', data-y='000', data-z='000'
+= data-x='12000', data-y='000', data-z='000'
 
 <img src="./img/img/stroustrup_confused.png" alt="HTML5-IMAGE" style="width:1000px;height:700px;">
 
@@ -298,7 +284,7 @@ int main()
 
 
 ---
-= data-x='000', data-y='000', data-z='000'
+= data-x='13000', data-y='000', data-z='000'
 
 # TITLE
 
@@ -309,7 +295,7 @@ int main()
 
 
 ---
-= data-x '000', data-y='0', data-z='-100'
+= data-x '13000', data-y='0', data-z='-100'
 
 # Jobs
 
